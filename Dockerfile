@@ -3,7 +3,7 @@ LABEL maintainer="Katie Gamanji"
 
 COPY . /app
 WORKDIR /app
-RUN python -m pip install --upgrade pip && pip  install -r requirements.txt
+RUN #!/usr/bin/env bash pip  install -r requirements.txt
 
 # command to run on container start
 CMD [ "python", "app.py" ]
